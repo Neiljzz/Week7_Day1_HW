@@ -1,31 +1,34 @@
-my_string = 'My age is '
-my_age = 44
-
-added_string = my_string + str(my_age)
-print(added_string)
+def add_nums(num1, num2):
+    return num1 + num2
 
 
-num1 = 10
-num2 = '20'
+print(add_nums)
+print(add_nums(15, 30))
+# print(add_nums())
 
-# num3 = num1 + num2
+# Ternary
+# value_if_true else condition value_if_false
+# number = int(input('Enter a number between 1-20: '))
 
-print(5 == 5)
-print(5 == 5.0)
-print(5 == '5')
+# value = 'Top Half' if number > 10 else 'Bottom Half'
 
-list1 = [1, 2, 3, 4]
-list2 = [1, 2, 3, 4]
-list3 = list1
+# print(value)
 
-print(list1 == list2)
-print(list1 is list2)
-print(list1 is list3)
 
-random_number = 5
+list_a = [1, 2, 3]
+list_b = [4, 5, 6]
 
-if random_number > 10:
-    print('This is in the if block')
-    print('So is this')
+list_c = list_a + list_b
+print(list_c)
 
-print('This is out of the if block')
+print(30 in list_c)
+
+
+my_name_list = ['B', 'r', 'i', 'a', 'n']
+print(my_name_list)
+print(''.join(my_name_list))
+print('-'.join(my_name_list))
+
+name_list = [letter for letter in 'Brian Stanton']
+
+print(name_list[3::2])
